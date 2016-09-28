@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parco Nazionale Brenta</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" type="text/css" href="../style/menu.css">
+  <link rel="stylesheet" type="text/css" href="../style/submenu.css">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+  <script src="../script/jquery-1.12.0.min.js"></script>
+  <script type='text/javascript' src='../script/menu.js'></script>
+  <script src="../script/ciclo_foto.js"></script>
+  <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+</head>
+<body>
+<div class="container">
+  <ul class="top">
+    <li>
+      <a href="http://naturalparkpolimi.altervista.org/"><img id="left"src="../foto/pigna-1_262588.jpg" alt="Simbolo" style="width:200px;height:150px;">
+      <h1 class="col-sm-5" >Parco Nazionale Brenta</h1></a>
+    </li>
+    <li></li>
+  </ul>
+  
+</div>
+
+<div class="container">
+  <ul id="nav">
+      <li class="first"><a href="http://naturalparkpolimi.altervista.org/src/territori.html">Territorio</a></li>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/rifugi.html" class="selected">Rifugi</a>
+          <ul>
+              <li class="first2"><a href="http://naturalparkpolimi.altervista.org/src/pernotto.html">Pernotto</a></li>
+              <li class="last"><a href="http://naturalparkpolimi.altervista.org/src/attivitaR.html">Attività nei Rifugi</a></li>
+          </ul>
+          <div class="clear"></div>
+      </li>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/sentieri.html">Sentieri</a></li>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/attivita.html" class="selected">Attività Educative</a>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/chi_siamo.html" class="selected">Chi Siamo</a>
+      <li class="last"><a href="http://naturalparkpolimi.altervista.org/src/come_arrivare.html">Come Arrivare</a></li>
+  </ul>
+</div>
+<section class="jumbotron">
+  <div class="container">
+    <div class="row text-center">
+    <h2>Come Arrivare</h2>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <figure class="col-sm-12">
+    <ul id="navi">
+        <li class="firsti"><a href="http://naturalparkpolimi.altervista.org/src/chi_siamo.html">Il Parco</a></li>
+        <li><a href="http://naturalparkpolimi.altervista.org/src/storia.html" class="selected">La Storia</a></li>
+        <li><a href="http://naturalparkpolimi.altervista.org/src/governance.html">Governance</a></li>
+        <li class="lasti"><a href="http://naturalparkpolimi.altervista.org/src/regole.html">Regole</a></li>
+    </ul>
+  </figure>
+</div>
+
+<section class="container" >
+  <div class="row text-center">
+    <h3>Google Map</h3>
+    <div id="map">
+      <script>
+
+        function initMap() {
+          var uluru = {lat: 46.203, lng: 10.716};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 11,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+
+        }
+      </script>
+      <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKTBJN7zBu0wwCDLA9nRZguinPayRiE4&callback=initMap">
+      </script>
+    </div>
+  </div>
+  <div class="row"></div>
+  <figure class="col-sm-4">
+    <h3 align="center">Arrivare in Macchina</h3>
+    <p align="center">Da Trento si segue la SS n. 45 della Gardesana Occidentale fino a Sarche, proseguendo per Comano Terme e Tione (SS n. 237). Poco prima di Comano Terme si incontra la deviazione per il settore meridionale del Gruppo di Brenta (Valli d’Ambiéz e d’Algone - SS n. 421). Da Tione, proseguendo sulla SS n. 237 in direzione sud, si può accedere alle valli di Breguzzo e Daone-Fumo. Proseguendo in direzione nord (SS n. 239) si risale la Val Rendena. Si giunge a Strembo (Sede), proseguendo, dopo 7 km., all’altezza di Carisòlo, si stacca la Val Genova. Tutti i centri di queste valli sono collegati con il capoluogo Trento dagli automezzi del servizio pubblico.</p>
+  </figure>
+  <figure class="col-sm-4">
+    <h3 align="center">Arrivare in Treno</h3>
+    <p align="center">Il trenino Trentino Trasporti (noto a molti come la Trento Malé) collega il capoluogo di provincia con la Val di Sole. Partendo da Trento, il trenino attraversa la Valle di Non per arrivare poi in Val di Sole fino a Marilleva 900, con fermate intermedie in tutti i paesi del fondovalle. Oltre che un mezzo di trasporto veloce ed efficiente, il trenino può rappresentare un modo per godere di bellissimi scorci paesaggistici. Quindi basta prendere uno dei numerosi treni che arrivano a Trento per poi salire su uno di questi trenini.</p>
+  </figure>
+  <figure class="col-sm-4">
+    <h3 align="center">Arrivare in Aereo</h3>
+    <p align="center">Trento possiede un proprio aereoporto, piccolo ed aperto al traffico di piccoli aerei da turismo. Il suo nome è Aereoporto di Trento-Mattarello, gli aeroporti più vicini alla città sono a Bolzano, Verona, Venezia, Bergamo.<br> L'aeroporto di Bolzano-Dolomiti Francesco Baracca è situato a soli 50 km da Trento e  soli 6 km da Bolzano, è collegato quotidianamente con Roma e altre città italiane. Il collegamento tra Bolzano e l'aeroporto è garantito dalle lienne di bus urbano nu. 10A e 10B. </p>
+  </figure>
+</section>
+      
+  
+
+<footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&reg;Parco Nazionale Brenta</p>
+    <ul class="col-sm-8">
+    <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+  <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+  <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+  <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -31,7 +31,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
+  background-image: url('../foto/wallpaper/P05-Monte-Castelgomberto-vs-Piana-di-Marcesina.jpg');
   background-size: cover;
   color: #ffffff;
   height: 500px;
@@ -59,23 +59,16 @@ section .row img {
   margin: 0 0 30px;
 }
 
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
+.col-md-6 img{
+  margin: 0 0 5px;
 }
 
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
+.col-md-12 p{
+  text-align: center;
 }
 
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
+.container p{
+  font-size: 17px;
 }
 
 footer {

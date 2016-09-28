@@ -1,0 +1,104 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#left{
+    float: left;
+}
+.top {
+    margin:0;
+    padding:0;
+    list-style:none;
+}  
+
+.top h1{
+    margin-top: 60px;
+}
+
+#nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+    width: 100%;
+}   
+ 
+#nav li {
+    float:left;
+    display:block;
+    width:185px;
+    height: 40px;
+    background:#E0E0E0;
+    position:relative;
+    z-index:500;
+    margin:0 2px;
+    margin-bottom: 1px;
+    -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+}
+#nav li.first {
+        -moz-border-radius:5px 0 0 5px;
+        -webkit-border-radius:5px 0 0 5px;
+    border-radius:5px 0 0 5px; 
+    }
+#nav li.last {
+        -webkit-border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+        border-radius:0 5px 5px 0;
+    }
+
+#nav li li.last {
+        -webkit-border-radius:0 0 5px 5px;
+    -moz-border-radius:0 0 5px 5px;
+        border-radius:0 0 5px 5px;
+    }
+#nav li a {
+    display:block;
+    padding:8px 5px 0 5px;
+    font-weight:700;
+    height:23px;
+    text-decoration:none;
+    text-align:center;
+    color:#333;
+}
+#nav li a:hover {
+    color:#C00;
+}
+#nav li li:hover {
+    -webkit-transform: translate(+10px,0);
+    }
+
+#nav ul {
+    position:absolute;
+    left:0;
+    display:none;
+    margin:0 0 0 -1px;
+    padding:0;
+    list-style:none;
+    width: 100%;
+}
+#nav ul li {
+    width:100px;
+    width:185px;
+    float:left;
+    margin: 
+    border-top:0px solid #fff;
+}
+#nav ul li.first2 {
+    margin-top: 18px;
+
+}
+#nav ul a {
+    display:block;
+    height:auto;
+    padding: 8px 5px;
+    color:#666;
+}
+
+/* fix ie6, meglio inserirlo in un file .css separato */
+*html #nav ul {
+    margin:0 0 0 -2px;
+}
