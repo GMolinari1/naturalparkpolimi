@@ -1,0 +1,23 @@
+table {
+	width: 100%;
+	margin: 5px 0 5px 0;
+	align
+}
+
+table tr{
+	margin: 10px 0 10px 0;
+	align-content: center;
+}
+
+table td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+table td p{
+	margin: 10px 0 10px 0;
+}
+
+.round div {
+	align-content: center;
+}

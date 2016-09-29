@@ -1,0 +1,7 @@
+.round {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #B0E0E6;
+    display: inline-block;
+}

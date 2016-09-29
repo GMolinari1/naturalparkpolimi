@@ -7,6 +7,10 @@ header {
   padding: 20px 0;
 }
 
+#table_list h3{
+  font-size: 22px;
+}
+
 header .row,
 footer .row {
   display: flex;
