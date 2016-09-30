@@ -5,7 +5,7 @@ var last = 0;
 $(document).ready(function()
 {
   $(".previous").fadeOut('fast');
-  $.getJSON('../script/attivitaR.php', function(data) 
+  $.getJSON('../php/attivitaR.php', function(data) 
   {
     var newhtml = '<table id="row"><tr><th><h3>Rifugi</h3></th><th><h3>Cucina</h3></th><th><h3>Parcheggio</h3></th><th><h3>Posti Letto</h3></th><th><h3>Apertura Stagionale</h3></th></tr>';
     $.each(data, function(key, val) 

@@ -15,7 +15,7 @@ $(document).ready(function () {
             method: "POST",
             //dataType: "json", //type of data
             crossDomain: true,
-            url: "../script/connectionClass.php", //Relative or absolute path to file.php file
+            url: "../php/connectionClass.php", //Relative or absolute path to file.php file
             success: function(response) 
             {
                 $(this).append()(response);

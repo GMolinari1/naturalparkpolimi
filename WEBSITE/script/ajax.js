@@ -7,7 +7,7 @@ $("document").ready(function()
 			method: "POST",
 			dataType: "json", //type of data
 			crossDomain: true,
-			url: "../script/connectioClass.php", //Relative or absolute path to file.php file
+			url: "../php/connectioClass.php", //Relative or absolute path to file.php file
 			//url: "../script/server.php",
 			//data: {number:value},
 			success: function() 
