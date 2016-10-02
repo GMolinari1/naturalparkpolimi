@@ -7,13 +7,11 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   
   <link rel="stylesheet" type="text/css" href="../style/menu.css">
-  <link rel="stylesheet" type="text/css" href="../style/noJumb.css">
-  <link rel="stylesheet" type="text/css" href="../style/round.css">
-  <link rel="stylesheet" type="text/css" href="../style/tabella.css">
-  <link rel="stylesheet" type="text/css" href="../style/renderTablePernotto.css">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+   <link rel="stylesheet" type="text/css" href="../style/attivita.css">
   <script src="../script/jquery-1.12.0.min.js"></script>
   <script type='text/javascript' src='../script/menu.js'></script>
-  <script type='text/javascript' src='../script/jsonPernotto.js'></script>
+  <script type='text/javascript' src='../script/attivitaScelta.js'></script>
   
 </head>
 <body>
@@ -25,38 +23,45 @@
     </li>
     <li></li>
   </ul>
+  
 </div>
 <div class="container">
   <ul id="nav">
       <li class="first"><a href="http://naturalparkpolimi.altervista.org/src/territori.html">Territorio</a></li>
-      <li><a href="http://naturalparkpolimi.altervista.org/src/rifugi.html" class="selected">Rifugi</a>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/rifugi.html" >Rifugi</a>
           <ul>
-              <li class="first2"><a href="http://naturalparkpolimi.altervista.org/src/pernotto.html">Pernotto</a></li>
-              <li class="last"><a href="http://naturalparkpolimi.altervista.org/src/attivitaR.html">Attività nei Rifugi</a></li>
+              <li class="first2" id="pernotto"><a href="http://naturalparkpolimi.altervista.org/src/pernotto.html">Pernotto</a></li>
+              <li class="last" id="attivitaR"><a href="http://naturalparkpolimi.altervista.org/src/attivitaR.html">Attività nei Rifugi</a></li>
           </ul>
           <div class="clear"></div>
       </li>
       <li><a href="http://naturalparkpolimi.altervista.org/src/sentieri.html">Sentieri</a></li>
-      <li><a href="http://naturalparkpolimi.altervista.org/src/attivita.html" class="selected">Attività Educative</a>
-      <li><a href="http://naturalparkpolimi.altervista.org/src/chi_siamo.html" class="selected">Chi Siamo</a>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/attivita.html" >Attività Educative</a>
+      <li><a href="http://naturalparkpolimi.altervista.org/src/chi_siamo.html" >Chi Siamo</a>
       <li class="last"><a href="http://naturalparkpolimi.altervista.org/src/come_arrivare.html">Come Arrivare</a></li>
   </ul>
 </div>
-
-<section class="container" >
-  <table id="row">
-  </table>
-</section>
-
-<section class="container" >
-  <div class="row text-center">
-    <button type="button" id="previous">Precedente</button>
-    <button type="button"  id="next" disabled="false">Prossima</button>
+<section class="jumbotron">
+  <div class="container">
+    <div class="row text-center">
+    <h2 id="titolo"></h2>
+    </div>
   </div>
 </section>
 
-
-
+<section class="container">
+  <div class="row">
+    <figure class="col-sm-9">
+      <p id="desc"></p>
+    </figure>
+    <div class="row text-center">
+      <figure class="col-sm-3" id="attivita">
+        <h3>Rifugi:</h3>
+        <div id="rifugi"></div>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <footer class="container">
   <div class="row">

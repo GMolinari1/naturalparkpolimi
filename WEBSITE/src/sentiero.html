@@ -7,10 +7,16 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   
   <link rel="stylesheet" type="text/css" href="../style/menu.css">
+  <link rel="stylesheet" type="text/css" href="../style/submenu.css">
   <link rel="stylesheet" type="text/css" href="../style/noJumb.css">
+  <link rel="stylesheet" type="text/css" href="../style/map.css">
+
   <script src="../script/jquery-1.12.0.min.js"></script>
   <script type='text/javascript' src='../script/menu.js'></script>
-  
+  <script src="../script/ciclo_foto.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKTBJN7zBu0wwCDLA9nRZguinPayRiE4"></script>
+  <script src="../script/sentiero.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -21,7 +27,9 @@
     </li>
     <li></li>
   </ul>
+  
 </div>
+
 <div class="container">
   <ul id="nav">
       <li class="first"><a href="http://naturalparkpolimi.altervista.org/src/territori.html">Territorio</a></li>
@@ -40,37 +48,62 @@
 </div>
 
 
-<section class="container" >
-  <div class="row">
-    <figure class="col-sm-6">
-      <h3><a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=1"> Cime</a></h3>
-      <a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=1">
-        <image src="../foto/cime/637856.jpg" class="img-rounded" height="350"/>
-      </a>
-  </figure>
-  <figure class="col-sm-6">
-      <h3><a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=2"> Valli</a></h3>
-      <a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=2">
-        <image src="../foto/valli/val_di_borzago_val_rendena,12545.jpg" class="img-rounded" height="350"/>
-      </a>
-  </figure>
-  </div>
-  <div class="row"> 
-    <figure class="col-sm-6">
-      <h3><a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=3"> Laghi e Cascate</a></h3>
-      <a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=3">
-        <image src="../foto/laghi/val_genova_val_rendena,12547.jpg" class="img-rounded" height="350"/>
-      </a>
-  </figure>
-  <figure class="col-sm-6">
-      <h3><a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=4"> Luoghi Storici</a></h3>
-      <a href="http://naturalparkpolimi.altervista.org/src/territorioCategoria.html?var=4">
-        <image src="../foto/luoghi_storici/Forte_Belvedere-Gschwendt.jpg" class="img-rounded" height="350"/>
-      </a>
-  </figure>
+
+<section class="container">
+  <div class="row text-center">
+   <h2 id="nomeSentiero">Sentiero</h2>
   </div>
 </section>
 
+
+<section class="container" >
+  <div class="row text-center">
+    <figure class="col-sm-6">
+      <image id="immagineSent"/>
+    </figure>
+    <figure class="col-sm-6">
+      <div class="row">
+        <h3>Dati</h3>
+        <div class="row">
+          <figure class="col-sm-6">
+            <div id="monti"></div>
+            <div id="delta"></div>
+            
+          </figure>
+          <figure class="col-sm-6">
+            <div id="diff"></div>
+            <div id="ore"></div>
+            <div id="lunghezza"></div>
+          </figure>
+        </div>
+      </div>
+      <div class="row text-center">
+        <h3>Rifugi</h3>
+        <div class="row" id="rifugi">
+        </div>
+      </div>
+      <div class="row text-center">
+        <h3>Luoghi</h3>
+        <div class="row" id="terreni">
+        </div>
+      </div>
+    </figure>
+    
+  </div>
+</section>
+
+<section class="container" >
+    <figure class="col-sm-12">
+      <div class="row text-center">
+        <p id="desc"></p>
+      </div>
+    </figure>
+    
+</section>
+  
+
+      
+  
 
 <footer class="container">
   <div class="row">

@@ -3,7 +3,12 @@
 require("connectionClass.php");
 
 $var = new MysqlClass;
-$var->askQuery("SELECT id_hh, nome, botanica, geologia, avvicinamento, educazione  FROM HH");
+
+
+$query = "SELECT * FROM HH";
+
+$var = new MysqlClass;
+$var->askQuery($query);
 //$var->pushJson();
 unset($var);
 ?>

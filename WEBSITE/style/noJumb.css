@@ -37,6 +37,26 @@ section .row img {
   width: 100%;
 }
 
+#sentieri a{
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+#rifugi a{
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+#terreni a{
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+#attivita a{
+  font-size: 20px;
+  padding-right: 20px;
+}
+
 .col-md-6 {
   margin: 0 0 30px;
 }

@@ -40,21 +40,23 @@ body {
         transition: all 0.1s ease-in-out;
 }
 #nav li.first {
-        -moz-border-radius:5px 0 0 5px;
+        border-radius:5px 0 0 5px;
         -webkit-border-radius:5px 0 0 5px;
     border-radius:5px 0 0 5px; 
     }
+
 #nav li.last {
-        -webkit-border-radius:0 5px 5px 0;
-    -moz-border-radius:0 5px 5px 0;
-        border-radius:0 5px 5px 0;
-    }
+    -webkit-border-radius:0 5px 5px 0;
+    border-radius:0 5px 5px 0;
+    border-radius:0 5px 5px 0;
+}
 
 #nav li li.last {
-        -webkit-border-radius:0 0 5px 5px;
-    -moz-border-radius:0 0 5px 5px;
-        border-radius:0 0 5px 5px;
+    -webkit-border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px;
     }
+
 #nav li a {
     display:block;
     padding:8px 5px 0 5px;
@@ -67,9 +69,10 @@ body {
 #nav li a:hover {
     color:#C00;
 }
+
 #nav li li:hover {
     -webkit-transform: translate(+10px,0);
-    }
+}
 
 #nav ul {
     position:absolute;
@@ -80,16 +83,18 @@ body {
     list-style:none;
     width: 100%;
 }
+
 #nav ul li {
     width:100px;
     width:185px;
     float:left;
-    margin: 
     border-top:0px solid #fff;
 }
+
 #nav ul li.first2 {
     margin-top: 18px;
 }
+
 #nav ul a {
     display:block;
     height:auto;
@@ -97,7 +102,7 @@ body {
     color:#666;
 }
 
-/* fix ie6, meglio inserirlo in un file .css separato */
-*html #nav ul {
+
+#nav ul {
     margin:0 0 0 -2px;
 }

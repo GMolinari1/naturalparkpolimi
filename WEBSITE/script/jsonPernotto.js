@@ -40,16 +40,16 @@ $(document).ready(function()
 
 function load()
 {
-  $.getJSON('../php/attivitaR.php', function(data) 
+  $.getJSON('../php/pernotto.php', function(data) 
   {
-    var newhtml = '<table id="row"><thead><tr><th><h3>Rifugi</h3></th><th><h3>Botanica</h3></th><th><h3>Geologia</h3></th><th><h3>Avvicinamento agli Animali</h3></th><th><h3>Educazione Ambientale</h3></th></tr></thead>';
+    var newhtml = '<table id="row"><thead><tr><th><h3>Rifugi</h3></th><th><h3>Cucina</h3></th><th><h3>Parcheggio</h3></th><th><h3>Posti Letto</h3></th><th><h3>Apertura Stagionale</h3></th></tr></thead>';
     $.each(data, function(key, val) 
     {
       if (key>= position && key < position+delta) 
       {
         newhtml += '<tr>';
         newhtml += '<td><a href="http://naturalparkpolimi.altervista.org/src/rifugio.html?var='+ val.id_hh+'"><p align="center">' + val.nome +'</p></a></td>';
-        if (val.botanica == 1) 
+        if (val.cucina == 1) 
         {
           newhtml += '<td><div class="round"></div></td>';
         }
@@ -57,7 +57,7 @@ function load()
         {
           newhtml += '<td><div class="roundWhite"></div></td>';
         }
-        if (val.geologia == 1) 
+        if (val.parcheggio == 1) 
         {
           newhtml += '<td><div class="round"></div></td>';
         }
@@ -65,7 +65,7 @@ function load()
         {
           newhtml += '<td><div class="roundWhite"></div></td>';
         }
-        if (val.avvicinamento == 1) 
+        if (val.posti_letto >= 1) 
         {
           newhtml += '<td><div class="round"></div></td>';
         }
@@ -73,7 +73,7 @@ function load()
         {
           newhtml += '<td><div class="roundWhite"></div></td>';
         }
-        if (val.educazione == 1) 
+        if (val.stagionale == 1) 
         {
           newhtml += '<td><div class="round"></div></td>';
         }
