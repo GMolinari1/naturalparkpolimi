@@ -21,7 +21,8 @@ $(document).ready(function()
 	    newhtml += "<a href='http://naturalparkpolimi.altervista.org/src/rifugio.html?var=" + val.id_hh +"'>"+val.nome_hh+"</a><br>";
 	    fotopath = (val.fotopath);
 	    $("#desc").html(val.descrizione);
-    	$("#titolo").html(val.nome);
+      if ($_GET["var"] != 4)
+    	   $("#titolo").html(val.nome);
 	});
 	$("#rifugi").html(newhtml);
 	$('.jumbotron').css('background-image', 'url("' + fotopath + '")');
