@@ -1,4 +1,4 @@
-Componenti del Gruppo: Molinari Guglielmo Pietro Filippo, matricola 837667
+Componenti del Gruppo: Molinari Guglielmo Pietro Filippo
 
 Link GitHub:https://github.com/GMolinari1/naturalparkpolimi
 
