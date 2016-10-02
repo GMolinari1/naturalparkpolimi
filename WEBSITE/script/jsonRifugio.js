@@ -39,6 +39,7 @@ $(document).ready(function()
         position: uluru,
         map: map
       });
+      
       $.getJSON('../php/rifugio.php?id_hh='+$_GET["var"]+'&query=1', function(data2) 
       {
         var newhtml ="";

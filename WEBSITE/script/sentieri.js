@@ -40,7 +40,19 @@ $(document).ready(function()
 
 function load()
 {
-  $.getJSON('../php/sentieri.php', function(data) 
+  //decodifica valore passato tramite $_GET
+  var $_GET = {};
+
+  document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+  });
+
+
+  $.getJSON('../php/sentieri.php?diff='+$_GET["var"], function(data) 
   {
     var newhtml = '';
     $.each(data, function(key, val) 
